@@ -8,7 +8,7 @@
     <file path="/fragment.java" changelist="fa667237-d06f-4a23-8de0-07909b2bf53d" time="1428145449710" ignored="false" />
     <file path="$PROJECT_DIR$/../Dates/src/Task.java" changelist="fa667237-d06f-4a23-8de0-07909b2bf53d" time="1427542712476" ignored="false" />
     <file path="/Task.java" changelist="fa667237-d06f-4a23-8de0-07909b2bf53d" time="1427542631522" ignored="false" />
-    <file path="/MyCalc.java" changelist="fa667237-d06f-4a23-8de0-07909b2bf53d" time="1428155488209" ignored="false" />
+    <file path="/MyCalc.java" changelist="fa667237-d06f-4a23-8de0-07909b2bf53d" time="1428156323543" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,10 +84,10 @@
       <file leaf-file-name="MyCalc.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MyCalc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="14" selection-start="405" selection-end="405" vertical-scroll-proportion="0.21296297">
+            <state line="66" column="18" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.6537037">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1862#1870#0" expanded="true" />
+                <element signature="e#1817#1825#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -475,12 +475,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_72/jre/lib/rt.jar!/java/util/Stack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="152" selection-end="152" vertical-scroll-proportion="0.1574074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MyCalc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="14" selection-start="405" selection-end="405" vertical-scroll-proportion="0.21296297">
+        <state line="66" column="18" selection-start="1671" selection-end="1671" vertical-scroll-proportion="0.6537037">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1862#1870#0" expanded="true" />
+            <element signature="e#1817#1825#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -12,13 +12,11 @@ import java.util.regex.Pattern;
 public class MyCalc <T extends Number>{
     Pattern pAll, pDig, pOp;
     Queue<String> qu;
-    Stack<String> st;
     HashMap<String, Integer> priority;
 
     MyCalc()
     {
         qu = new LinkedList<String>();
-        st = new Stack<String>();
         priority = new HashMap<String, Integer>();
         priority.put("(", 1); priority.put(")", 1);
         priority.put("+", 2); priority.put("-", 2);
@@ -29,63 +27,51 @@ public class MyCalc <T extends Number>{
         pOp = Pattern.compile("[\\+\\-\\*\\/\\^]");
     }
 
-    public T add(T a, T b)
+    public Double add(T a, T b)
     {
-        if (a.getClass() == Double.class)
-            return a.doubleValue() + b.doubleValue();
+        //if (a.getClass() == Double.class)
+        return a.doubleValue() + b.doubleValue();
     }
 
-    public Integer add(Integer a, Integer b)
-    {
-        return a.intValue() + b.intValue();
-    }
-
-    public Double mult(Double a, Double b)
+    public Double mult(T a, T b)
     {
         return a.doubleValue() * b.doubleValue();
     }
 
-    public Integer mult(Integer a, Integer b)
-    {
-        return a.intValue() * b.intValue();
-    }
-
-    public Double div(Double a, Double b)
+    public Double div(T a, T b)
     {
         return a.doubleValue() / b.doubleValue();
     }
 
-    public Integer div(Integer a, Integer b)
-    {
-        return a.intValue() / b.intValue();
-    }
-    public Double mod(Double a, Double b)
+    public Double mod(T a, T b)
     {
         return a.doubleValue() % b.doubleValue();
     }
 
-    public Integer mod(Integer a, Integer b)
-    {
-        return a.intValue() % b.intValue();
-    }
-
-    void calculate(Queue<String> qu)
+    void calculate()
     {
         Double res = Double.valueOf(0);
-        Stack<String> st = new Stack<String>();
+        Stack<T> st = new Stack<T>();
         while (!qu.isEmpty())
         {
-            st.push(qu.poll());
-            if (pOp.matcher(st.peek()).find())
+            if (pOp.matcher(qu.peek()).find())
             {
-                //if (st.peek() == "+")
-                    //res += ;
+                if (qu.peek() == "+")
+                    res += add(st.pop(), st.pop());
+
+                qu.poll();
+            }
+
+            if (pDig.matcher(qu.peek()).find())
+            {
+                //st.push(qu.peek());
             }
         }
     }
 
     public Queue<String> Shunting_yard(String input)
     {
+        Stack<String> st = new Stack<String>();
         Matcher m;
         try
         {
